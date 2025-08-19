@@ -67,7 +67,7 @@ cmp.setup.cmdline(":", {
 })
 local cmp_autopairs = require("nvim-autopairs.completion.cmp")
 cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
--- Set up lspconfig.
+
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 require("lspconfig")["gopls"].setup({
 	capabilities = capabilities,
@@ -78,7 +78,7 @@ require("lspconfig").phpactor.setup({
 })
 cmp.setup.filetype({ "sql" }, {
 	source = {
-		{ name = "vim-dadbod-completion" },
+		-- { name = "vim-dadbod-completion" },
 		{ name = "buffer" },
 	},
 })

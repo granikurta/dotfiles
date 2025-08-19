@@ -12,8 +12,10 @@ lspconfig.gopls.setup {
 }
 vim.lsp.enable('phpactor')
 
+
+-- vim.lsp.enable('vue_ls')
 require'lspconfig'.volar.setup{
-	filetypes = {'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue'}
+	filetypes = {'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue', 'ts'}
 }
 require'lspconfig'.ts_ls.setup{
   init_options = {

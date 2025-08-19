@@ -1,6 +1,6 @@
 require("rose-pine").setup({
-    variant = "moon", -- auto, main, moon, or dawn
-    dark_variant = "moon", -- main, moon, or dawn
+    variant = "main", -- auto, main, moon, or dawn
+    dark_variant = "main", -- main, moon, or dawn
     dim_inactive_windows = false,
     extend_background_behind_borders = true,
 
@@ -65,6 +65,8 @@ require("rose-pine").setup({
     end,
 })
 vim.cmd("colorscheme rose-pine")
+vim.cmd.highlight('QuickFixLine guibg=#940101')
+vim.api.nvim_set_hl(0, "Visual", { bg = "#445038" })
 --vim.cmd("colorscheme rose-pine-main")
 -- vim.cmd("colorscheme rose-pine-moon")
 -- vim.cmd("colorscheme rose-pine-dawn")

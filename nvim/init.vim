@@ -9,7 +9,6 @@ set number
 set ts=4 sw=4
 set clipboard^=unnamed,unnamedplus
 set completeopt = "noinsert,menuone,noselect"
-set termguicolors
 set encoding=UTF-8
 set foldmethod=expr
 set foldexpr=nvim_treesitter#foldexpr()
@@ -48,6 +47,7 @@ Plug 'nvim-tree/nvim-tree.lua'
 Plug 'nvim-telescope/telescope-live-grep-args.nvim'
 Plug 'stevearc/conform.nvim'
 Plug 'lewis6991/gitsigns.nvim'
+Plug 'catgoose/nvim-colorizer.lua'
 " post install (yarn install | npm install) then load plugin only for editing supported files
 call plug#end()
 
