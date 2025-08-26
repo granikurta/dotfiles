@@ -12,11 +12,6 @@ lspconfig.gopls.setup({
 })
 vim.lsp.enable("phpactor")
 
-
-
-
--- Frontend setup 
--- https://github.com/vuejs/language-tools/wiki/Neovim
 local tsserver_filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue', 'ts' }
 
 local vue_plugin = {
@@ -47,13 +42,15 @@ local ts_ls_config = {
 }
 
 local vue_ls_config = {}
-
+--
 vim.lsp.config('vtsls', vtsls_config)
 vim.lsp.config('vue_ls', vue_ls_config)
 vim.lsp.config('ts_ls', ts_ls_config)
 vim.lsp.enable({'vtsls', 'vue_ls'})
 -- require("lspconfig").volar.setup({
 -- 	filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue", "ts" },
+-- 	-- /home/fiwer/.config/nvm/versions/node/v24.1.0/lib/node_modules/typescript-language-server
+-- 	-- location = "/home/fiwer/.config/nvm/versions/node/v24.1.0/lib/node_modules/@vue/language-server",
 -- 	init_options = {
 -- 		vue = {
 -- 			hybridMode = false,

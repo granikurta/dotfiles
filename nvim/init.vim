@@ -88,8 +88,8 @@ nnoremap <leader>fl <cmd>Telescope lsp_references<cr>  " Under cursor
 
 nnoremap <leader>fs <cmd>Telescope grep_string<cr> " Searches for the string under your cursor or selection in your current working directory
 
-nnoremap <leader>hp <cmd>Gitsigns preview_hunk<CR>
+nnoremap <leader>hp <cmd>Gitsigns preview_hunk_inline<CR>
 
 nnoremap <Leader><space> <cmd>let @/ = ""<cr>
-nnoremap <leader>d <cmd>lua vim.diagnostic.setloclist() <cr>
+"nnoremap <leader>d <cmd>lua vim.diagnostic.setloclist() <cr>
 "nnoremap gp :silent %!prettier --stdin-filepath %<CR>
